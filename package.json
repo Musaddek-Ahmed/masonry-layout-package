@@ -1,5 +1,5 @@
 {
-  "name": "masonry-layout",
+  "name": "@musaddek/masonry-layout",
   "version": "0.1.0",
   "description": "A responsive grid/masonry layout component for React apps.",
   "main": "dist/index.js",
@@ -23,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/masonry-layout"
+    "url": "https://github.com/Musaddek-Ahmed/masonry-layout-package"
   },
   "author": "Musaddek Ahmed",
   "license": "MIT",
