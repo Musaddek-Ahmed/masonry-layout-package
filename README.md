@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧱 @musaddek/masonry-layout
 
-## Getting Started
+A responsive and easy-to-use React image layout component that supports **grid**, **flex**, and **masonry-style** layouts with minimal configuration.
 
-First, run the development server:
+## 📦 Installation
 
 ```bash
-npm run dev
+npm install @musaddek/masonry-layout
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+yarn add @musaddek/masonry-layout
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🚀 Usage
 
-## Learn More
+import ImageLayout from '@musaddek/masonry-layout';
 
-To learn more about Next.js, take a look at the following resources:
+const images = [
+  { src: '/images/img1.jpg', alt: 'Image 1' },
+  { src: '/images/img2.jpg', alt: 'Image 2' },
+  { src: '/images/img3.jpg', alt: 'Image 3' },
+  // Add more images as needed
+];
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+export default function App() {
+  return (
+    <div className="p-4">
+      <ImageLayout
+        images={images}
+        layoutType="masonry" // Options: 'grid', 'flex', 'masonry'
+        columns={3}
+        gap="1rem"
+      />
+    </div>
+  );
+}
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🧱 Supported Layouts
+✅ Grid Layout
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✅ Flex Layout
+
+✅ Masonry Layout (auto-flowing columns)
+
+
+
+📷 Example Image Object
+
+{
+  src: 'https://example.com/image.jpg',
+  alt: 'Description'
+}
+
+
+💡 Notes
+
+Responsive behavior depends on your outer container and TailwindCSS/grid CSS responsiveness.
+
+Ideal for galleries, portfolio sections, and image-heavy dashboards.
+
+🤝 Contribution
+
+Feel free to open issues or submit pull requests.
+
+📄 License
+MIT © Musaddek Ahmed
+
+

@@ -1,6 +1,6 @@
 {
   "name": "@musaddek/masonry-layout",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A responsive grid/masonry layout component for React apps.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
